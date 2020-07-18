@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site_lang }}">
+
+<head>
+
+	<!-- PRESET -->
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+	<!-- ICON & THEME -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ theme_color }}">
+	<meta name="msapplication-TileColor" content="{{ theme_color }}">
+	<meta name="theme-color" content="{{ theme_color }}">
+
+	<!-- DESCRIPTION -->
+	<title>{{ site_title }}</title>
+	<meta name="description" content="{{ site_description }}"/>
+
+	<!-- MISC -->
+	{% autoescape false %}
+		{{ bh_head }}
+	{% endautoescape %}
+
+</head>
+
+<body>
+
+	<noscript>
+		<div class="noscript">
+			<div><b>ERROR !</b></div>
+			<div><p>This app cannot run without JavaScript activated</p></div>
+		</div>
+	</noscript>
+
+	<div id="root" class="app">
+		{% autoescape false %}
+			{{ bh_ssr }}
+		{% endautoescape %}
+	</div>
+
+	{% autoescape false %}
+		{{ bh_footer }}
+	{% endautoescape %}
+
+</body>
+
+</html>

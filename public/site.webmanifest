@@ -1,0 +1,19 @@
+{
+    "name": "Jessy Pouliot",
+    "short_name": "Jessy Pouliot",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ff9900",
+    "background_color": "#ff9900",
+    "display": "standalone"
+}

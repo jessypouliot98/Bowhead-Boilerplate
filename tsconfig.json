@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"baseUrl": "./resources/ts/app",
+		"outDir": "./public/js",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"jsx": "react",
+		"lib": [
+			"es2015",
+			"es6",
+			"es2017",
+			"es2019",
+			"esnext",
+			"dom"
+		],
+		"paths": {
+			"@components": ["components"],
+			"@components/*": ["components/*"],
+			"@providers": ["providers"],
+			"@providers/*": ["providers/*"],
+		},
+		"allowSyntheticDefaultImports": true,
+		"typeRoots": ["node_modules/@types", "./resources/@types"],
+		"forceConsistentCasingInFileNames": false
+	},
+	"include": [
+			"./resources/ts/app/*"
+	],
+	"exclude": [
+		"node_modules",
+		"./resources/@types",
+		"dist"
+	]
+}
