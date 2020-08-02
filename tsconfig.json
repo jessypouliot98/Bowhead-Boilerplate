@@ -8,10 +8,6 @@
 		"resolveJsonModule": true,
 		"jsx": "react",
 		"lib": [
-			"es2015",
-			"es6",
-			"es2017",
-			"es2019",
 			"esnext",
 			"dom"
 		],
