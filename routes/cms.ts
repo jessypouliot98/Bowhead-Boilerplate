@@ -1,4 +1,4 @@
-import { Route } from 'humpback/lib/App/Http'
+import { Route } from '@whalr/humpback/lib/App/Http'
 import CollectionController from '../app/controller/beluga/CollectionController'
 import AdminController from '../app/controller/beluga/AdminController'
 

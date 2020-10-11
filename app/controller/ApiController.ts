@@ -1,4 +1,4 @@
-import { Controller } from 'humpback/lib/App/Http'
+import { Controller } from '@whalr/humpback/lib/App/Http'
 
 class ApiController extends Controller {
 

@@ -1,0 +1,14 @@
+version: '3'
+services:
+    database:
+        image: 'mongo'
+        container_name: 'bowhead-db-container'
+        environment:
+            - MONGO_INITDB_DATABASE=database
+            - MONGO_INITDB_ROOT_USERNAME=bowhead
+            - MONGO_INITDB_ROOT_PASSWORD=password
+        volumes:
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js:ro
+            - ./mongo-volume:/data/db
+        ports:
+            - '27017:27017'

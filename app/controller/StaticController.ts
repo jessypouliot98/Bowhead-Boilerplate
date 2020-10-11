@@ -1,5 +1,5 @@
-import { Controller } from 'humpback/lib/App/Http'
-import View from 'humpback/lib/Entities/View/View'
+import { Controller } from '@whalr/humpback/lib/App/Http'
+import View from '@whalr/humpback/lib/Entities/View/View'
 
 class StaticController extends Controller {
 

@@ -1,4 +1,4 @@
-import Humpack from 'humpback'
+import Humpack from '@whalr/humpback'
 import * as routes from '../routes'
 
 const app = Humpack.start();

@@ -1,6 +1,6 @@
-import { Controller } from 'humpback/lib/App/Http'
-import Model, { Page, Post, User } from 'humpback/lib/App/Model'
-import { column } from 'humpback/lib/App/Model/BaseModel'
+import { Controller } from '@whalr/humpback/lib/App/Http'
+import Model, { Page, Post, User } from '@whalr/humpback/lib/App/Model'
+import { column } from '@whalr/humpback/lib/App/Model/BaseModel'
 
 const models: any[] = [Page, Post, User];
 

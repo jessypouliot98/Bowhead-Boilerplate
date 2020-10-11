@@ -1,6 +1,6 @@
-import { Route } from 'humpback/lib/App/Http'
+import { Route } from '@whalr/humpback/lib/App/Http'
 import ApiController from '../app/controller/ApiController'
-import { UserController } from 'humpback/lib/App/Http/Controller'
+import { UserController } from '@whalr/humpback/lib/App/Http/Controller'
 
 export default Route.prefix('/api', [
 	Route.get('', [ApiController, 'index']),
@@ -12,7 +12,7 @@ export default Route.prefix('/api', [
 			Route.get('/verify', [UserController, 'authCheck']),
 		]),
 
-		Route.prefix('/user', [
+		Route.prefix('/users', [
 			Route.get('', [UserController, 'index']),
 			Route.get('/:id', [UserController, 'show']),
 			Route.post('', [UserController, 'create']),
