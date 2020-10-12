@@ -18,7 +18,9 @@ export default Route.prefix('/api', [
 			Route.post('', [UserController, 'create']),
 			Route.patch('/:id', [UserController, 'update']),
 			Route.delete('/:id', [UserController, 'delete']),
-		])
+		]),
+
+		Route.get('/test', [ApiController, 'test']),
 
 	])
 ]);

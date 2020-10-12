@@ -1,6 +1,15 @@
 import { Controller } from '@whalr/humpback/lib/App/Http'
+import { User } from '@whalr/humpback/lib/App/Model'
 
 class ApiController extends Controller {
+
+	public async test() {
+		const users = User
+			.where('email', 'regex', /(^p)/)
+			.get();
+
+		return users;
+	}
 
 	public index() {
 		return {
@@ -14,35 +23,35 @@ class ApiController extends Controller {
 				methods: {
 					GET: [
 						{
-							path: '/user',
+							path: '/users',
 							description: 'Get all users',
 						},
 						{
-							path: '/user/{user_id}',
+							path: '/users/{user_id}',
 							description: 'Get a user'
 						},
 					],
 					POST: [
 						{
-							path: '/user',
+							path: '/users',
 							description: 'Create a user'
 						},
 					],
 					PUT: [
 						{
-							path: '/user/{user_id}',
+							path: '/users/{user_id}',
 							description: 'Insert in a user'
 						},
 					],
 					PATCH: [
 						{
-							path: '/user/{user_id}',
+							path: '/users/{user_id}',
 							description: 'Update a user'
 						},
 					],
 					DELETE: [
 						{
-							path: '/user/{user_id}',
+							path: '/users/{user_id}',
 							description: 'Delete a user'
 						},
 					],
