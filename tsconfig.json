@@ -15,7 +15,7 @@
 			"@components": ["components"],
 			"@components/*": ["components/*"],
 			"@providers": ["providers"],
-			"@providers/*": ["providers/*"],
+			"@providers/*": ["providers/*"]
 		},
 		"allowSyntheticDefaultImports": true,
 		"typeRoots": ["node_modules/@types", "./resources/@types"],
