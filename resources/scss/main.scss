@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+	.widescreen {
+		position: relative;
+		display: block;
+
+		&::after {
+			content: "";
+			display: block;
+			padding-top: 56%;
+		}
+
+		& > * {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	&, & *::placeholder, & textarea {
+		font-family: arial;
+	}
+}
+
+.root {
+	overflow-x: hidden;
+}
+
+.app {
+	max-width: 100%;
+}

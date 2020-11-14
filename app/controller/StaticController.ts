@@ -7,18 +7,15 @@ class StaticController extends Controller {
 
 	public async serve() {
 		return View.render('app', {
-			bh_head: `
-				<style>
-					html {
-						font-family: 'arial';
-					}
-				</style>
-			`,
-			bh_ssr: `<h1>Hello World!</h1>`,
+			site_title: 'Bowhead app',
+			bh_head: [
+				View.linkCSS('/css/style.css'),
+			].join('\n'),
+			bh_ssr: undefined,
 			bh_footer: [
 				View.scriptData({ hello: 'world' }),
 				View.scriptData([1, 2, 3], ROUTE_SCOPE),
-				View.scriptSrc('/js/index.js'),
+				View.scriptSrc('/js/app.js'),
 			].join('\n'),
 		});
 	}

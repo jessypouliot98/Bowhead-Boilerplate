@@ -7,6 +7,6 @@ export default Route.prefix('/', [
 
     Route.middleware(HumpbackHttp.static(path.join( process.cwd(), '/public'))),
 
-	Route.get('', [StaticController, 'serve']),
+	Route.get('*', [StaticController, 'serve']),
 
 ]);

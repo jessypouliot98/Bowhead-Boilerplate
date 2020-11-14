@@ -4,33 +4,22 @@ const Context = React.createContext({});
 const { Consumer } = Context;
 
 export interface IAppProviderProps {
-	callbackFn?: Function
+	initialData?: any,
 }
 
 export interface IAppProviderState {
 	loading: boolean,
-	globalState: any,
-	menu: any
 }
 
 class AppProvider extends React.Component<IAppProviderProps, IAppProviderState> {
 
 	state = {
-		plugins: {},
 		loading: false,
-		globalState: {},
-		menu: {},
 	};
-
-	componentDidMount(){
-		
-	}
 
 	render() {
 		return (
-			<Context.Provider value={{
-				state: this.state.globalState,
-			}}>
+			<Context.Provider value={{ foo: 'bar' }}>
 				{ !this.state.loading && (
 					this.props.children
 				) }
