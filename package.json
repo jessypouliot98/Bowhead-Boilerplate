@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@whalr/humpback": "file:../Humpback",
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-router-dom": "^5.2.0"
